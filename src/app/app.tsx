@@ -1,9 +1,9 @@
-import NxWelcome from './nx-welcome';
+import LandingPage from './screens/landingPage/landingPage';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="mememaker" />
+      <LandingPage />
     </div>
   );
 }

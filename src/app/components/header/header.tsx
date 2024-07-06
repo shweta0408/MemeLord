@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { MenuAlt1Icon, XIcon } from '@heroicons/react/outline';
+
 const navigation = [
   { name: 'Chart', href: '#' },
-  { name: 'Roadmap', href: '#' },
-  { name: 'How to Buy', href: '#' },
-  { name: 'Contact us', href: '#' },
+  { name: 'Roadmap', href: '#roadmap' },
+  { name: 'How to Buy', href: '#buy' },
+  { name: 'Contact us', href: '#contact' },
   { name: 'Whitepaper', href: '#' },
   { name: 'Dapp', href: '#' },
 ];
@@ -29,7 +30,7 @@ export const Header = () => {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+            <MenuAlt1Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -69,7 +70,7 @@ export const Header = () => {
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+              <XIcon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
           <div className="mt-6 flow-root">

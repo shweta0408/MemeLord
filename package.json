@@ -10,9 +10,10 @@
   "private": true,
   "dependencies": {
     "@headlessui/react": "^2.1.2",
-    "@heroicons/react": "^2.1.4",
+    "@heroicons/react": "^1.0.6",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "react-social-icons": "^6.16.0"
   },
   "devDependencies": {
     "@nx/cypress": "19.4.1",

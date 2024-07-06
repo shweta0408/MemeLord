@@ -1,4 +1,13 @@
+/* styles.css (or styles.scss) */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* You can add global styles to this file, and also import other style files */
+
+/* Add global styles */
+
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for the whole document */
+}
+
+/* You can add other global styles here */

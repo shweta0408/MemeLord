@@ -7,25 +7,29 @@ function Footer() {
     <footer
       className="bg-gray-900 text-white py-4 flex flex-col justify-center p-10 bg-gradient-to-b from-white to-amber-600"
       id="contact"
-      style={{ alignItems: 'center' }}
     >
-      <img src="/HeaderIcon.png" alt="Logo" className="h-auto w-40" />
+      <img
+        src="/HeaderIcon.png"
+        alt="Logo"
+        className="h-auto w-40 mx-auto mb-6"
+      />
+
       <div
-        className=" mx-auto px-4 flex items-center justify-between mb-10 mt-10"
-        style={{ width: '100%' }}
+        className="mx-auto px-4 flex flex-col sm:flex-row items-center justify-between mb-10 mt-6"
+        style={{ maxWidth: '100%' }}
       >
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center justify-center sm:justify-start mb-4 sm:mb-0">
           <span className="text-lg">
             $MemeLord {new Date().getFullYear()} © All right reserved
           </span>
         </div>
-        <div className="flex space-x-4">
+
+        <div className="flex flex-wrap justify-center sm:justify-end space-x-4">
           <SocialIcon
             url="https://telegram.org/"
             network="telegram"
             bgColor="none"
           />
-
           <SocialIcon
             url="https://www.linkedin.com/"
             network="linkedin"

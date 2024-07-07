@@ -2,21 +2,15 @@ import { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { MenuAlt1Icon, XIcon } from '@heroicons/react/outline';
 
-const navigation = [
-  { name: 'Chart', href: '#' },
-  { name: 'Roadmap', href: '#roadmap' },
-  { name: 'How to Buy', href: '#buy' },
-  { name: 'Contact us', href: '#contact' },
-  { name: 'Whitepaper', href: '#' },
-  { name: 'Dapp', href: '#' },
-];
-export const Header = () => {
+export const Header = ({ navigation }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-gradient-to-b from-yellow-400 to-amber-600">
+    <header className="fixed inset-x-0 top-0 z-50 bg-gradient-to-b from-amber-400 to-amber-800">
       <nav
         aria-label="Global"
-        className="flex items-center justify-evenly align-middle p-3 lg:px-8"
+        className={`flex items-center justify-${
+          navigation.length > 2 ? 'evenly' : 'between'
+        } align-middle p-3 lg:px-8`}
       >
         <div>
           <a href="#">

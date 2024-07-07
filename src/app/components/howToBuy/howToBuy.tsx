@@ -9,8 +9,11 @@ function HowToBuy() {
         <div className="bg-white shadow-lg rounded-lg m-4 p-6 w-80">
           <div className="flex flex-col justify-center align-middle items-center mb-4">
             <img src="/htb-trustwallet-01.svg" width={'80px'} />
-            <p className="text-lg">
-              Step 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p className="text-2xl font-bold mb-4 mt-3 text-black">
+              Download Trust Wallet
+            </p>
+            <p className="text-lg align-">
+              Download & setup Trust Wallet (an app for your phone)
             </p>
           </div>
         </div>
@@ -18,9 +21,13 @@ function HowToBuy() {
         <div className="bg-white shadow-lg rounded-lg m-4 p-6 w-80 ">
           <div className="flex flex-col justify-center align-middle items-center mb-4">
             <img src="/htb-bnb-01.svg" width={'80px'} />
-            <p className="text-lg">
-              Step 2: Sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
+            <p className="text-2xl font-bold mb-4 mt-3 text-black">
+              Buy and send BNB to Trust Wallet
+            </p>
+            <p className="text-lg align-">
+              Buy BNB on an exchange (i.e. Binance, Kraken, Coinbase etc.).
+              Transfer the BNB to your BSC wallet address. BSC addresses start
+              with a "0x"
             </p>
           </div>
         </div>
@@ -28,9 +35,13 @@ function HowToBuy() {
         <div className="bg-white shadow-lg rounded-lg m-4 p-6 w-80">
           <div className="flex flex-col justify-center align-middle items-center mb-4">
             <img src="/presaleNew1.png" width={'80px'} />
-            <p className="text-lg">
-              Step 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris.
+            <p className="text-2xl font-bold mb-4 mt-3 text-black">
+              Head on Buy now!
+            </p>
+            <p className="text-lg align-">
+              Click Buy now Register (require referral) / Login (Metamask/Trust)
+              Buy in with minimum 10 usd From Buy Section of Dashboard in
+              accepted tokens and coins.
             </p>
           </div>
         </div>
@@ -38,9 +49,12 @@ function HowToBuy() {
         <div className="bg-white shadow-lg rounded-lg m-4 p-6 w-80">
           <div className="flex flex-col justify-center align-middle items-center mb-4">
             <img src="/4.png" width={'80px'} />
+            <p className="text-2xl font-bold mb-4 mt-3 text-black">
+              View $MemeLord and HOLD!
+            </p>
             <p className="text-lg">
-              Step 4: Duis aute irure dolor in reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla pariatur.
+              Now you need to add MemeLord to your Trust Wallet to view your
+              $MemeLord. Lastly HOLD!
             </p>
           </div>
         </div>

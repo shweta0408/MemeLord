@@ -1,22 +1,30 @@
-import { Particles } from 'https://cdn.skypack.dev/react-tsparticles';
+import React, { useCallback } from 'react';
+import type { Container, Engine } from 'tsparticles-engine';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
+const ParticlesComponent = () => {
+  const particlesInit = useCallback(async (engine: Engine) => {
+    console.log(engine);
 
-export const ParticleComponent = () => {
-  const particlesInit = async (main) => {
-    // This loads the tsparticles package bundle
-    await window.tsParticles.loadFull(main);
-  };
+    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+  }, []);
 
+  const particlesLoaded = useCallback(
+    async (container: Container | undefined) => {
+      await console.log(container);
+    },
+    []
+  );
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
+      loaded={particlesLoaded}
       options={{
-        background: {
-          color: {
-            value: '#0d47a1',
-          },
-        },
-        fpsLimit: 60,
+        fpsLimit: 120,
         interactivity: {
           events: {
             onClick: {
@@ -30,12 +38,6 @@ export const ParticleComponent = () => {
             resize: true,
           },
           modes: {
-            bubble: {
-              distance: 400,
-              duration: 2,
-              opacity: 0.8,
-              size: 40,
-            },
             push: {
               quantity: 4,
             },
@@ -55,9 +57,6 @@ export const ParticleComponent = () => {
             enable: true,
             opacity: 0.5,
             width: 1,
-          },
-          collisions: {
-            enable: true,
           },
           move: {
             direction: 'none',
@@ -91,3 +90,5 @@ export const ParticleComponent = () => {
     />
   );
 };
+
+export default ParticlesComponent;

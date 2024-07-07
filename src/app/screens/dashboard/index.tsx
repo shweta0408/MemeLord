@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 
 import BuyingOptions from './buyingOptions';
 import UserDashboard from './userDashboard';
@@ -8,10 +8,9 @@ import Referral from './referral';
 import Vault from './vault';
 import PresaleRecord from './presaleRecord';
 import Calculator from './calculator';
-
 import { Header } from '../../components/header/header';
-import { ParticleComponent } from './ParticleComponent';
 
+import ParticlesComponent from '../../components/particles/particles';
 const navigation = [
   { name: 'Tokens', href: '#' },
   { name: 'Buy', href: '#' },
@@ -27,6 +26,7 @@ const navigation = [
 export const Dashboard: React.FC = () => {
   return (
     <>
+      <ParticlesComponent />
       <Header navigation={navigation} />
       <div className="flex flex-col items-center justify-evenly bg-gradient-to-b from-amber-600 to-amber-800 min-h-screen p-6">
         <img

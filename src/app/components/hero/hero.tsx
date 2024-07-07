@@ -1,6 +1,6 @@
 export const HeroBanner = () => {
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8">
+    <div className="relative isolate px-6 pt-14 lg:px-8 flex flex-col items-center justify-center mt-20">
       <div className="mx-auto py-16 sm:py-32 lg:py-24 flex flex-col sm:flex-row items-center justify-evenly">
         <div className="text-center sm:w-2/5">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">

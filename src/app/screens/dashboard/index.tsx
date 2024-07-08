@@ -28,10 +28,10 @@ export const Dashboard: React.FC = () => {
     <>
       <ParticlesComponent />
       <Header navigation={navigation} />
-      <div className="flex flex-col items-center justify-evenly bg-gradient-to-b from-amber-600 to-amber-800 min-h-screen p-6">
+      <div className="flex flex-col items-center justify-evenly min-h-screen p-6 app-bg ">
         <img
           className="mt-20"
-          src="/revolving.png"
+          src="/dash_logo.png"
           alt="memelord"
           style={{ width: '200px', height: 'auto' }}
         />

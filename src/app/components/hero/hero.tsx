@@ -1,18 +1,20 @@
+import { Link } from 'react-router-dom';
+
 export const HeroBanner = () => {
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8 flex flex-col items-center justify-center mt-20">
-      <div className="mx-auto py-16 sm:py-32 lg:py-24 flex flex-col sm:flex-row items-center justify-evenly">
+    <div className="relative isolate px-6 pt-14 lg:px-8 flex flex-col items-center justify-center mt-20 max-w-6xl w-full">
+      <div className="mx-auto py-16 sm:py-32 lg:py-24 flex flex-col sm:flex-row items-center justify-between">
         <div className="text-center sm:w-2/5">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             The Lord of All Memes Has Arrived!
           </h1>
           <div className="mt-8 sm:mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="/dashboard"
-              className="w-full sm:w-56 rounded-md bg-gradient-to-b from-amber-400 to-amber-800 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            <Link
+              to="/dashboard"
+              className="w-full sm:w-56 rounded-md app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Buy Now
-            </a>
+            </Link>
           </div>
         </div>
         <div

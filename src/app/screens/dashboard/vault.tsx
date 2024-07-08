@@ -2,7 +2,7 @@ import React from 'react';
 
 const Vault = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-evenly bg-gradient-to-b from-amber-400 to-amber-800 rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mb-16">
+    <div className="flex flex-col sm:flex-row items-center justify-evenly app-bg  rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mb-16">
       {/* Storage Vault */}
       <div className="bg-white p-4 rounded-lg shadow-md flex-1 m-3 sm:m-5 flex flex-col justify-center min-w-48">
         <p className="text-center">Storage Vault</p>

@@ -2,8 +2,11 @@ import React from 'react';
 
 function Rule() {
   return (
-    <div className="flex flex-col items-center justify-center mt-10" id="rule">
-      <div className="flex flex-col md:flex-row items-center justify-center bg-gradient-to-b from-amber-400 to-amber-800 rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6">
+    <div
+      className="flex flex-col items-center justify-center mt-10 p-6"
+      id="rule"
+    >
+      <div className="flex flex-col md:flex-row items-center justify-center app-bg  rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6">
         {/* Left Section for Content */}
         <div className="md:w-1/2 p-4 text-center md:text-left">
           <p className="text-green-500 font-mono">$MemeLord</p>

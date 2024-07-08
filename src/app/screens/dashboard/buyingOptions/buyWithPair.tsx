@@ -32,7 +32,7 @@ export const BuyWithPair = ({ selectedTitle }) => {
         {[10, 50, 100, 500, 1000, 2000].map((num, index) => (
           <button
             key={index}
-            className="w-28 sm:w-32 md:w-40 m-2 rounded-md bg-gradient-to-b from-amber-400 to-amber-800 px-4 py-3 text-sm font-semibold text-amber-900 hover:text-white shadow-sm hover:bg-amber-700 focus:outline-none transition-colors duration-300"
+            className="w-28 sm:w-32 md:w-40 m-2 rounded-md app-bg  px-4 py-3 text-sm font-semibold text-amber-900 hover:text-white shadow-sm hover:bg-amber-700 focus:outline-none transition-colors duration-300"
             onClick={() => handleAmountClick(num)}
           >
             {num} USD
@@ -87,13 +87,13 @@ export const BuyWithPair = ({ selectedTitle }) => {
         </p>
       </div>
       <div className="flex justify-center">
-        <button className="w-28 sm:w-32 md:w-40 m-2 rounded-md bg-gradient-to-b from-amber-400 to-amber-800 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus:outline-none transition-colors duration-300">
+        <button className="w-28 sm:w-32 md:w-40 m-2 rounded-md app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus:outline-none transition-colors duration-300">
           Approve
         </button>
-        <button className="w-28 sm:w-32 md:w-40 m-2 rounded-md bg-gradient-to-b from-amber-400 to-amber-800 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus:outline-none transition-colors duration-300">
+        <button className="w-28 sm:w-32 md:w-40 m-2 rounded-md app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus:outline-none transition-colors duration-300">
           {approveButtonText}
         </button>
-        <button className="w-28 sm:w-32 md:w-40 m-2 rounded-md bg-gradient-to-b from-amber-400 to-amber-800 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus:outline-none transition-colors duration-300">
+        <button className="w-28 sm:w-32 md:w-40 m-2 rounded-md app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus:outline-none transition-colors duration-300">
           Buy
         </button>
       </div>

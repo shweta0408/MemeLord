@@ -5,14 +5,14 @@ import ParticlesComponent from '../../components/particles/particles';
 
 const NotFound = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-amber-700 relative overflow-hidden">
+    <div className="flex items-center justify-center h-screen app-bg relative overflow-hidden">
       <ParticlesComponent />
       <div className="text-center bg-white p-20 shadow-lg rounded-full relative z-20">
         <h1 className="text-6xl font-bold text-red-500 mb-4">404</h1>
         <p className="text-2xl text-red-400 mb-8">Page Not Found</p>
         <a
           href="/"
-          className="px-4 py-2 bg-amber-600 text-white rounded-md hover:bg-amber-800"
+          className="px-4 py-2 app-bg text-white rounded-md hover:bg-amber-800"
         >
           Go to Home
         </a>

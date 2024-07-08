@@ -3,14 +3,14 @@ import { Header } from '../../components/header/header';
 import Footer from '../footer/footer';
 
 const WhitePaper = () => {
-  const navigation = [{ name: 'Wallet', href: '' }];
+  const navigation = [{ name: 'Wallet', href: '/wallet' }];
 
   return (
     <div>
       <Header navigation={navigation} />
       <div className="flex flex-col items-center justify-evenly bg-white min-h-screen p-6 mt-16">
         <h1 className="text-3xl font-bold">The Reign Begins</h1>
-        <div className="w-full max-w-2xl space-y-4 bg-gradient-to-b from-amber-600 to-amber-800 rounded-2xl p-5">
+        <div className="w-full max-w-2xl space-y-4 app-bg rounded-2xl p-5">
           <p>
             Meme Lord brings a groundbreaking approach to presale buying and
             trading, ensuring that our community thrives. Here’s why Meme Lord

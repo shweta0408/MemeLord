@@ -11,14 +11,22 @@ import Footer from '../../components/footer/footer';
 const navigation = [
   { name: 'Chart', href: '#' },
   { name: 'Roadmap', href: '#roadmap' },
-  { name: 'How to Buy', href: '#buy' },
+  { name: 'Buy', href: '#buy' },
   { name: 'Contact us', href: '#contact' },
   { name: 'Whitepaper', href: '/paper' },
   { name: 'Dapp', href: '/login' },
+  { name: 'Founder', href: '/founder' },
 ];
 export default function LandingPage() {
   return (
-    <div className="bg-white">
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       <Header navigation={navigation} />
       <HeroBanner />
       <Rule />

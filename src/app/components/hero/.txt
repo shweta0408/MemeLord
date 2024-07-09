@@ -1,0 +1,20 @@
+ <style jsx>{`
+        @keyframes spin {
+          0% {
+            transform: rotate3d(0, 0, 0, 0deg);
+          }
+          100% {
+            transform: rotate3d(2, 5, 2, 3600deg);
+          }
+        }
+
+        .animate-spin {
+          animation: spin 60s linear infinite;
+        }
+
+        @media (min-width: 640px) {
+          .sm\:py-32 {
+            padding-top: 12rem; /* Adjust as needed */
+          }
+        }
+      `}</style>

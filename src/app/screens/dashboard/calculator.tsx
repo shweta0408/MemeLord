@@ -119,6 +119,13 @@ const Calculator = () => {
                           </button>
                         ))}
                       </div>
+                      <input
+                        type="number"
+                        id="usdtAmountInput2"
+                        value={usdtAmount} // Automatically updates when button is clicked
+                        readOnly // Prevent direct editing
+                        className="mt-1 px-3 py-2 border rounded-md w-full shadow-sm sm:text-sm border-gray-300 focus:outline-none focus:ring focus:ring-amber-500"
+                      />
                     </div>
                   </div>
                 </div>
@@ -148,15 +155,15 @@ const Calculator = () => {
               <div className="px-4 py-3 sm:px-6">
                 <p
                   id="finalPrice"
-                  className="text-sm text-gray-700"
+                  className="font-bold text-sm text-gray-700"
                 >{`Final $MemeLord Price after ${numDays} days: $${result.finalPrice}`}</p>
                 <p
                   id="totalTokens"
-                  className="text-sm text-gray-700"
+                  className="font-bold text-sm text-gray-700"
                 >{`Total $MemeLords you can buy: ${result.totalTokens} (including ${result.bonusTokens} bonus tokens - ${result.bonusPercentage}% bonus)`}</p>
                 <p
                   id="totalValue"
-                  className="text-sm text-gray-700"
+                  className="font-bold text-sm text-gray-700"
                 >{`Total value in USDT after ${numDays} days: $${result.totalValue}`}</p>
               </div>
             )}

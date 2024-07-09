@@ -12,15 +12,15 @@ import { Header } from '../../components/header/header';
 
 import ParticlesComponent from '../../components/particles/particles';
 const navigation = [
-  { name: 'Tokens', href: '#' },
+  { name: 'Founder', href: '/founder' },
   { name: 'Buy', href: '#' },
   { name: 'History', href: '#' },
   { name: 'Income', href: '#' },
   { name: 'Referral', href: '/dashboard#referal' },
   { name: 'Contract', href: '/dashboard#contract' },
-  { name: 'Teams', href: '#' },
   { name: 'Records', href: '/dashboard#record' },
   { name: 'Home', href: '/' },
+  { name: 'Admin', href: '/admin' },
 ];
 
 export const Dashboard: React.FC = () => {

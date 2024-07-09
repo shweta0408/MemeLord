@@ -3,10 +3,10 @@ import { Header } from '../../components/header/header';
 import ParticlesComponent from '../../components/particles/particles';
 
 const navigation = [
-  { name: 'Dapp', href: '/login' },
-  { name: 'Admin', href: '/admin' },
-  { name: 'Team', href: '/Team' },
   { name: 'Founder Dashboard', href: '/Team' },
+  { name: 'Home', href: '/' },
+  { name: 'Connect', href: '/' },
+  // { name: 'Team', href: '/Team' },
 ];
 
 export const FoundersPage = () => {
@@ -15,29 +15,74 @@ export const FoundersPage = () => {
       <ParticlesComponent />
       <div className="flex flex-col items-center justify-evenly app-bg min-h-screen p-6">
         <Header navigation={navigation} />
-        <div className="flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 to-white rounded-2xl shadow-lg overflow-hidden max-w-xl w-full p-6 mb-16">
-          <h2 className="text-2xl font-bold mb-6">Welcome To $MemeLord</h2>
-          <div className="w-full max-w-md space-y-4">
-            <label
-              htmlFor="referer"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Check Referrer
-            </label>
-            <input
-              type="text"
-              id="referer"
-              name="referer"
-              className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-            />
-            <div className="w-full max-w-md space-y-4 mt-4">
-              <button className="w-full rounded-3xl app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 hover:text-amber-100 transition-colors duration-300">
-                Login
-              </button>
-              <button className="w-full rounded-3xl app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 hover:text-amber-100 transition-colors duration-300">
-                Register
-              </button>
+
+        <div className="flex flex-col sm:flex-row items-center justify-evenly  max-w-6xl w-full p-6 mt-28 mb-14">
+          <div className="app-bg flex-1 p-4 rounded-lg shadow-md flex flex-col justify-center">
+            <div className="bg-white flex-1 p-4 rounded-lg shadow-md flex flex-col justify-center">
+              <p className="text-center">LordFounder Balance</p>
+              <p className="text-center">-</p>
             </div>
+          </div>
+
+          {/* Image to be displayed */}
+          <div className="flex-1 flex justify-center align-top">
+            <img
+              className="w-40 mt-2 " // Added margin to separate from sides
+              src="/dash_logo.png"
+              alt="memelord"
+            />
+          </div>
+
+          {/* Rank Achieved */}
+          <div className="app-bg flex-1 p-4 rounded-lg shadow-md flex flex-col justify-center">
+            <div className="bg-white flex-1 p-4 rounded-lg shadow-md flex flex-col justify-center">
+              <p className="text-center">Team Buys</p>
+              <p className="text-center">-</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-evenly app-bg rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mt-3 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
+            {/* Total Buys */}
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col justify-center">
+              <p className="text-center">Total Buys</p>
+              <p className="text-center">-</p>
+            </div>
+            {/* Rank Achieved */}
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col justify-center">
+              <p className="text-center">Rank Achieved</p>
+              <p className="text-center">-</p>
+            </div>
+            {/* Reward */}
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col justify-center">
+              <p className="text-center">Reward</p>
+              <p className="text-center">-</p>
+            </div>
+            {/* Direct Buys */}
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col justify-center">
+              <p className="text-center">Direct Buys</p>
+              <p className="text-center">-</p>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col justify-center">
+              <p className="text-center">Extra </p>
+              <p className="text-center">-</p>
+            </div>
+
+            <div className="bg-white p-4 rounded-lg shadow-md flex flex-col justify-center">
+              <p className="text-center">Extra</p>
+              <p className="text-center">-</p>
+            </div>
+          </div>
+        </div>
+
+        {/*Team Details*/}
+        <div className="flex flex-col sm:flex-row items-center justify-evenly app-bg  rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mb-10">
+          <div className="flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 to-white rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mt-16 mb-16 ">
+            <a href="#" className="text-2xl  font-bold">
+              TEAM DETAILS
+            </a>
           </div>
         </div>
       </div>

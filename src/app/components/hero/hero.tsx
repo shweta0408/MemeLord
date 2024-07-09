@@ -10,7 +10,7 @@ export const HeroBanner = () => {
           </h1>
           <div className="mt-8 sm:mt-10 flex items-center justify-center gap-x-6">
             <Link
-              to="/dashboard"
+              to="/buyingOption"
               className="w-full sm:w-56 rounded-md app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Buy Now

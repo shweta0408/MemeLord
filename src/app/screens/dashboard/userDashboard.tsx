@@ -2,7 +2,10 @@ import React from 'react';
 
 const UserDashboard = () => {
   return (
-    <div className="flex flex-col items-center justify-evenly app-bg  rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mb-16">
+    <div
+      className="flex flex-col items-center justify-evenly app-bg  rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mb-16"
+      id="dashboard"
+    >
       <div className="flex flex-row w-full bg-white mb-5 justify-center rounded-2xl p-3">
         <p className="text-amber-600 text-center font-bold text-2xl mb-4">
           User Dashboard

@@ -33,6 +33,59 @@ const AdminControl = ({ onClose }) => {
             </div>
           </div>
 
+          {/*Checkbox*/}
+
+          {/* Checkbox with Button on Left */}
+          <div className="flex items-center mt-4">
+            <div className="w-full flex flex-row justify-between align-middle space-y-4">
+              {/* First Checkbox and Button */}
+              <div className="flex items-center justify-center space-x-4">
+                <label
+                  htmlFor="setMaintainPriceOnOff"
+                  className="flex items-center"
+                >
+                  <input
+                    type="checkbox"
+                    id="setMaintainPriceOnOff"
+                    name="setMaintainPriceOnOff"
+                    className="form-checkbox h-5 w-5 text-blue-600 mr-2"
+                    required
+                  />
+                  setMaintainPriceOnOff
+                </label>
+                <button
+                  type="submit"
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >
+                  Submit
+                </button>
+              </div>
+
+              {/* Second Checkbox and Button */}
+              <div className="flex items-center justify-center space-x-4">
+                <label
+                  htmlFor="setPurchaseBonusOnOff"
+                  className="flex items-center"
+                >
+                  <input
+                    type="checkbox"
+                    id="setPurchaseBonusOnOff"
+                    name="setPurchaseBonusOnOff"
+                    className="form-checkbox h-5 w-5 text-blue-600 mr-2"
+                    required
+                  />
+                  setPurchaseBonusOnOff
+                </label>
+                <button
+                  type="submit"
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+
           <div className="row mt-4">
             <div className="col-3">
               <label

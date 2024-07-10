@@ -47,7 +47,6 @@ import Roadmap from '../../components/roadmap/roadmap';
 import HowToBuy from '../../components/howToBuy/howToBuy';
 import Partners from '../../components/partners/partners';
 import Footer from '../../components/footer/footer';
-import { Link, Element } from 'react-scroll';
 
 const navigation = [
   { name: 'Chart', href: '#' },

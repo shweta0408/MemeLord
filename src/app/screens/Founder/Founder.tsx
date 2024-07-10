@@ -6,6 +6,7 @@ const navigation = [
   { name: 'Founder Dashboard', href: '/Team' },
   { name: 'Home', href: '/' },
   { name: 'Connect', href: '/' },
+  { name: 'Team', href: '/team' },
   // { name: 'Team', href: '/Team' },
 ];
 
@@ -24,7 +25,7 @@ export const FoundersPage = () => {
             </div>
           </div>
 
-          {/* Image to be displayed */}
+          {/* Image to be displayed here  */}
           <div className="flex-1 flex justify-center align-top">
             <img
               className="w-40 mt-2 " // Added margin to separate from sides
@@ -78,7 +79,10 @@ export const FoundersPage = () => {
         </div>
 
         {/*Team Details*/}
-        <div className="flex flex-col sm:flex-row items-center justify-evenly app-bg  rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mb-10">
+        <div
+          className="flex flex-col sm:flex-row items-center justify-evenly app-bg  rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mb-10"
+          id="teamsection"
+        >
           <div className="flex flex-col items-center justify-evenly bg-gradient-to-b from-gray-100 to-white rounded-2xl shadow-lg overflow-hidden max-w-6xl w-full p-6 mt-16 mb-16 ">
             <a href="#" className="text-2xl  font-bold">
               TEAM DETAILS

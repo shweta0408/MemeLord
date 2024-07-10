@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { Header } from '../../components/header/header';
 import ParticlesComponent from '../../components/particles/particles';
 
-const navigation = [{ name: 'Home', href: '/' }];
+const navigation = [
+  { name: 'Home', href: '/' },
+  { name: 'Dashboard', href: '/dashboard' },
+];
 
 function Wallet() {
   const [balance, setBalance] = useState(0);

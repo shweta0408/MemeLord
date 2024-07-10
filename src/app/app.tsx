@@ -18,6 +18,7 @@ import Roadmap from './components/roadmap/roadmap';
 import BuyNow from './screens/BuynowPage/buyNow';
 import { Dashboard } from './screens/dashboard';
 import Register from './screens/Register/Register';
+import RegisterScreen from './screens/Register/RegisterScreen';
 
 export function App() {
   return (
@@ -35,6 +36,7 @@ export function App() {
         <Route path="/buyingOption" element={<BuyNow />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/registerscreen" element={<RegisterScreen />} />
       </Routes>
     </Router>
   );

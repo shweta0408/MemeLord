@@ -1,6 +1,7 @@
 import React from 'react';
 import ParticlesComponent from '../../components/particles/particles';
 import { Header } from '../../components/header/header';
+import { Link } from 'react-router-dom';
 
 const navigation = [{ name: 'Home', href: '/' }];
 function Register() {
@@ -24,13 +25,17 @@ function Register() {
               name="referer"
               className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
             />
-            <div className="w-full max-w-md space-y-4 mt-4">
-              <button className="w-full rounded-3xl app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 hover:text-amber-100 transition-colors duration-300">
-                Login
-              </button>
-              <button className="w-full rounded-3xl app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 hover:text-amber-100 transition-colors duration-300">
-                Register
-              </button>
+            <div className="w-full max-w-md space-y-4 mt-4 mb-11">
+              <Link to="/login">
+                <button className="w-full rounded-3xl app-bg  mb-3 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 hover:text-amber-100 transition-colors duration-300">
+                  Login
+                </button>
+              </Link>
+              <Link to="/registerscreen">
+                <button className="w-full rounded-3xl app-bg  px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-700 hover:text-amber-100 transition-colors duration-300">
+                  Register
+                </button>
+              </Link>
             </div>
           </div>
         </div>

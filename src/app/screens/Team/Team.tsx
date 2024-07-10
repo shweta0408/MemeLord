@@ -2,7 +2,17 @@ import React from 'react';
 import { Header } from '../../components/header/header';
 import ParticlesComponent from '../../components/particles/particles';
 
-const navigation = [{ name: 'Home', href: '/' }];
+const navigation = [
+  { name: 'Founder', href: '/founder' },
+  { name: 'Buy', href: '#' },
+  { name: 'History', href: '#' },
+  { name: 'Income', href: '#' },
+  { name: 'Referral', href: '/dashboard#referal' },
+  { name: 'Contract', href: '/dashboard#contract' },
+  { name: 'Records', href: '/dashboard#record' },
+  { name: 'Home', href: '/' },
+  { name: 'Admin', href: '/admin' },
+];
 
 function Team() {
   return (
